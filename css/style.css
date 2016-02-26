@@ -1,6 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
 
+@font-face {
+	font-family: HelveticaNeue;
+	src: url(../fonts/HelveticaNeueBold.otf);
+}
+
 /*** GENERAL STYLES ***/
 body {
 	font-family: 'Merriweather Sans', sans-serif;
@@ -29,6 +34,10 @@ img {
 	padding: 100px 15px;
 }
 
+.light-spacing {
+	padding: 50px 15px;
+}
+
 .alt-spacing {
 	padding-top: 100px;
 	padding-bottom: 30px;
@@ -36,9 +45,33 @@ img {
 
 .header {
 	font-weight: 700;
-	font-size: 40px;
+	font-size: 50px;
 	font-family: 'Merriweather Sans', sans-serif;
 	margin-bottom: 50px;
+}
+
+h3.header {
+	font-size: 40px;
+}
+
+.first-big:first-line {
+	font-size: 60px;
+}
+
+.first-big {
+	font-size: 40px;
+}
+
+.gray-green-header {
+	font-family: 'Merriweather Sans', sans-serif;
+	color: #9fcc3b;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.gray-green-header:first-line {
+	font-size: 60px;
+	color: #939598;
 }
 
 .text {
@@ -77,12 +110,24 @@ img {
 	color: #f06c25;
 }
 
+.gray {
+	color: #c4c5c6;
+}
+
 .green-btn {
-	background-color: #bfd42d;
+	background-color: #9fcc3b;
 }
 
 .green-btn:hover {
-	background-color: #b4c82a;
+	background-color: #8cb334;
+}
+
+.white-btn {
+	background-color: #fff;
+}
+
+.white-btn:hover {
+	background-color: #e3e3e3;
 }
 
 .text-justify {
@@ -107,7 +152,6 @@ img {
 .navbar {
 	border-radius: 0;
 	border: 0;
-	background-color: #bfd42d;
 	margin-bottom: 0;
 }
 
@@ -120,7 +164,7 @@ img {
 	min-height: 86px;
 }
 
-.nav-contact {
+.navbar .social {
 	height: 86px;
 }
 
@@ -128,44 +172,89 @@ img {
 	padding-top: 0;
 }
 
-.navbar .container-fluid.navigation {
+.navbar:nth-child(2) {
+	background: transparent;
+	position: absolute;
+	width: 100%;
+}
 
+.navbar-fixed-top {
+	position: fixed!important;
+}
+
+.navbar:nth-child(2) .container-fluid {
+	padding: 0;
 }
 
 .navbar .collapse {
+	background-color: #9fcc3b;
+	max-width: 1230px;
 	text-align: center!important;
+	margin: 0 auto;
+	padding: 0!important;
+	height: 70px!important;
 }
 
 .navbar-nav {
 	float: none;
+	height: 70px;
+	position: relative;
+}
+
+.navbar-nav:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 10px;
+	background-color: #fff;
 }
 
 .navbar-nav>li {
 	float: none;
 	display: inline-block;
+	padding: 0!important;
+	margin: 0!important;
+	width: calc(12.5% - 3.919px);
+	height: 70px;
 }
 
 .navbar-nav>li>a {
 	color: #fff!important;
+	/*padding: 22px 40.5px;*/
+	margin: 0!important;
+	padding: 0!important;
+	position: absolute;
+	left: 0;
+	right: 0;
 }
 
 .navbar-nav>li>a:hover {
 	color: #e3e3e3!important;
 }
+
+.navbar-nav>li:last-child {
+	background-color: #ffffff!important;
+}
+
+.navbar-nav>li:last-child>a {
+	color: #9fcc3b!important;
+}
 /*** NAVBAR ***/
 
 /*** BANNER ***/
 .banner {
-	height: calc( 100vh - 136px);
-	background: url(../img/banner/bg.jpg) no-repeat center left;
+	height: calc( 100vh - 86px);
+	background: url(../img/banner/bg.jpg) no-repeat center center;
 	background-size: cover;
 }
 
 .banner-header {
 	color: #ffffff;
 	font-weight: 700;
-	font-size: 65px;
-	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 80px;
+	font-family: HelveticaNeue;
 	color: #bfd42d;
 }
 
@@ -176,35 +265,44 @@ img {
 
 /*** NOSOTROS ***/
 .nosotros {
+	padding: 200px 15px;
 	overflow: hidden;
 }
 
 .nosotros img {
 	position: absolute;
 	right: 0;
-	min-width: 50vw;
+	top: -170px;
+	min-width: 50vw!important;
 }
 
 .nosotros span {
 	font-weight: 500;
 }
+
+.showcase {
+	background-color: rgba(147, 149, 152, 0.33);
+	padding: 50px 0;
+}
 /*** NOSOTROS ***/
 
 /*** PROGRAMAS ***/
+.programas {
+	background: url(../img/parallax/bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
 .programas .container {
-	height: 486px;
+	height: 610px;
 }
 
 .programas .container img {
 	max-width: 90%;
+	margin-bottom: 20px;
 }
 /*** PROGRAMAS ***/
 
 /*** NOTICIAS ***/
-.noticias .carousel, .noticas .carousel-inner, .noticas .item {
-
-}
-
 .noticias .carousel-caption {
 	max-width: 80%;
 	margin: 0 auto;
@@ -214,6 +312,34 @@ img {
 	left: 0;
 	text-shadow: none;
 	color: inherit;
+	padding: 0;
+}
+
+.noticias .carousel-caption img {
+	position: absolute;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+}
+
+.noticias .carousel-caption .news-container {
+	background-color: #9fcc3b;
+}
+
+.noticias .carousel-caption .news-container:before {
+	content: '';
+	position: absolute;
+	background: #9fcc3b;
+	height: 100vh;
+	width: 50%;
+	transform: skew(-10deg);
+	left: -88px;
+	z-index: -1;
+}
+
+.noticias .carousel-caption p {
+	margin: 0;
+	padding: 15px;
 }
 
 .noticias .carousel-control.left:before, .noticias .carousel-control.right:before {
@@ -254,7 +380,6 @@ img {
 	text-decoration: none;
 	margin-top: 30px;
 }
-/*** DONACIONES ***/
 /*** DONACIONES ***/
 
 /*** CONTACTO ***/
@@ -299,25 +424,197 @@ img {
 }
 /*** CONTACTO ***/
 
+/*** QUIENES SOMOS ***/
+/*** BANNER ***/
+.quienes .banner {
+	background: url(../img/banner/quienes-somos.jpg) no-repeat center center;
+	background-size: cover;
+}
+/*** BANNER ***/
+
+/*** HISTORIA ***/
+.historia {
+	position: relative;
+}
+
+.historia .text {
+	font-size: 14px;
+	text-align-last: left;
+	line-height: 30px;
+}
+
+.historia img {
+	position: absolute;
+	left: 0;
+	width: 32vw;
+}
+/*** HISTORIA ***/
+
+/*** MISIÓN/VISIÓN ***/
+.mision .col-sm-6:first-child {
+	padding-right: 100px;
+}
+.mision .col-sm-6:last-child {
+	padding-left: 100px;
+}
+/*** MISIÓN/VISIÓN ***/
+
+/*** VALORES ***/
+.valores {
+	background-color: #9fcc3b;
+}
+
+.valores p {
+	font-size: 18px;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 700;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	left: 0;
+	right: 0;
+	position: absolute;
+}
+/*** VALORES ***/
+
+/*** CONSEJO DIRECTIVO ***/
+.directivo {
+	position: relative;
+	overflow: hidden;
+}
+
+.directivo img {
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	left: 0;
+}
+
+.directivo table {
+	margin: 0 auto;
+}
+
+.directivo table, .operativo table, .operativo p {
+	font-size: 16px;
+}
+
+.directivo td, .operativo td {
+	vertical-align: top;
+	padding: 0 5px;
+}
+
+.directivo span,
+.operativo span {
+	font-weight: 700;
+	color: #9fcc3b;
+}
+
+.directivo td:last-child {
+	padding-left: 50px;
+}
+
+.operativo {
+	padding-bottom: 50px;
+}
+
+.operativo td {
+	width: 50%;
+}
+
+/*** CONSEJO DIRECTIVO ***/
+/*** QUIENES SOMOS ***/
+
+/*** TRANSPARENCIA ***/
+.transparencia .banner {
+	background: url(../img/banner/transparencia.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.transparencia .green-btn {
+	height: 60px;
+	width: 236px;
+	line-height: 60px;
+	color: #fff!important;
+	font-size: 20px;
+	text-decoration: none!important;
+}
+
+.parallax-container.informes .container {
+	height: 486px;
+}
+
+.informes img {
+	margin: 30px 0;
+}
+
+.boletin {
+	position: relative;
+}
+
+.boletin .container {
+	height: 486px;
+	position: relative;
+}
+
+.boletin img {
+	position: absolute;
+	min-width: 50vw;
+	width: 600px;
+	bottom: 0;
+}
+
+.boletin .vertical-align {
+	position: absolute;
+	width: calc(100% - 30px);
+}
+
+.boletin a {
+	height: 85px;
+	width: 320px;
+	line-height: 85px;
+	color: #939598!important;
+	text-decoration: none!important;
+	font-size: 30px;
+	font-weight: 700;
+}
+/*** TRANSPARENCIA ***/
+
 /*** FOOTER ***/
 footer {
 	background-color: #fff;
 }
 
-.footer-top {
-	padding: 30px 15px;
+.footer-top .col-sm-6 {
+	z-index: 1;
 }
 
-.footer-top a img {
-	margin-top: 30px;
+.footer-top .row {
+	position: relative;
+	height: 250px;	
+}
+
+.footer-top .green-bg {
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	right: 0;
+	top: 0;
+	background-color: #9fcc3b;
+	z-index: ;
+}
+
+.footer-top .mail {
+	word-break: break-all;
 }
 
 .footer-top img:first-child {
 	max-height: 120px;
+	max-width: 90%;
+	float: right;
+	padding-right: 50px;
 }
 
 .footer-rights {
-	background-color: #bfd42d;
+	background-color: #9fcc3b;
 	padding: 10px;
 	font-family: 'Myriad Pro';
 	font-size: 12px;
@@ -363,16 +660,38 @@ footer {
 	background-position: center;
 }
 
+.parallax img.fixed-right {
+	right: 0;
+}
+
 /*** MEDIA QUERIES ***/
 @media (max-width: 1200px) {
 	.text {
 		line-height: 30px;
 	}
-}
-
-@media (max-width: 1138px) {
-	.banner {
-		height: calc( 100vh - 186px)
+	.header {
+		font-size: 42px;
+	}
+	.first-big:first-line, .gray-green-header:first-line {
+		font-size: 42px;
+	}
+	.first-big {
+		font-size: 30px;
+	}
+	.gray-green-header {
+		font-size: 28px;
+	}
+	.valores p {
+		font-size: 14px;
+	}
+	.mision .col-sm-6:first-child {
+		padding-right: 60px;
+	}
+	.mision .col-sm-6:last-child {
+		padding-left: 60px;
+	}
+	.directivo img {
+		left: -8%;
 	}
 }
 
@@ -380,6 +699,12 @@ footer {
 	.header {
 		font-size: 32px;
 		margin-bottom: 20px;
+	}
+	.first-big:first-line {
+		font-size: 32px;
+	}
+	.first-big {
+		font-size: 24px;
 	}
 	.text {
 		font-size: 15px;
@@ -402,6 +727,24 @@ footer {
 		height: 70px;
 		line-height: 70px;
 	}
+	.mision .col-sm-6:first-child {
+		padding-right: 30px;
+	}
+	.mision .col-sm-6:last-child {
+		padding-left: 30px;
+	}
+	.directivo img {
+		left: -20%;
+	}
+	.directivo td:last-child {
+		padding-left: 25px;
+	}
+	.boletin a {
+		height: 65px;
+		width: 250px;
+		line-height: 65px;
+		font-size: 25px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -415,10 +758,6 @@ footer {
 	.navbar .container-fluid.brand {
 		padding: 15px;
 	}
-	.navbar .container-fluid.brand .navbar-header {
-		text-align: center;
-		padding: 0;
-	}
 	.navbar .container-fluid.navigation .navbar-header {
 		background-color: #bfd42d;
 	}
@@ -430,15 +769,21 @@ footer {
 		display: block;
 		margin: 0 auto;
 	}
-	.nav-contact {
+	.navbar .social {
+		float: none!important;
+		display: block;
+		margin: 0 auto;
 		height: auto;
-	}
-	.nav-contact div {
 		text-align: center;
-		line-height: normal;
+	}
+	.navbar .social .vertical-align {
+		transform: none;
 	}
 	.navbar-toggle:focus, .navbar-toggle:hover {
 		background-color: #b4c82a!important;
+	}
+	#navbar .navbar-header {
+		margin: 0;
 	}
 	.navbar .navbar-collapse {
 		width: 100%;
@@ -448,6 +793,8 @@ footer {
 		position: absolute;
 		left: 0;
 		z-index: 1;
+		height: auto!important;
+		background: transparent;
 	}
 	.navbar-nav {
 		padding: 0!important;
@@ -458,15 +805,29 @@ footer {
 		float: right;
 		text-align: right;
 		background-color: #bfd42d;
+		height: auto;
+	}
+	.navbar-nav:after {
+		display: none;
 	}
 	.navbar-nav>li {
 		display: block;
+		height: auto;
+		width: auto;
 	}
 	.navbar-nav>li:hover {
 		background-color: #b4c82a;
 	}
+	.navbar-nav>li:last-child:hover {
+		background-color: #eeeeee!important;
+	}
+	.navbar-nav>li>a {
+		position: relative;
+		transform: none;
+		padding: 10px!important;
+	}
 	.banner-header {
-		font-size: 35px;
+		font-size: 43px;
 	}
 	.programas .container img {
 		max-height: 150px;
@@ -474,10 +835,63 @@ footer {
 	.contacto p {
 		margin-bottom: 20px;
 	}
+	.noticias .news-container {
+		padding: 0;
+	}
+	.noticias .news-container:before {
+		display: none;
+	}
+	.noticias .img-container {
+		height: 250px;
+		background-color: #9fcc3b;
+		overflow: hidden;
+	}
+	.noticias .img-container img {
+		position: relative;
+		z-index: 1;
+		min-width: 100%;
+		height: auto;
+	}
+	.valores p {
+		position: relative;
+		font-size: 16px;
+	}
+	.boletin {
+		overflow: hidden;
+	}
+	.footer-top .green-bg {
+		display: none;
+	}
+	.footer-top .row {
+		height: auto!important;
+	}
+	.footer-top .col-sm-6, .footer-top .col-sm-4  {
+		transform: none;
+		top: 0;
+	}
+	.footer-top .col-sm-6 {
+		padding: 15px;
+	}
+	.footer-top .col-sm-6:nth-child(2) {
+		background-color: #9fcc3b;
+	}
+	.footer-top img {
+		float: none!important;
+		padding: 0!important;
+	}
+	.mision .col-sm-6:first-child {
+		padding: 0;
+	}
+	.mision .col-sm-6:last-child {
+		padding: 0;
+	}
 }
 
 @media (max-width: 480px) {
 	.banner-header {
-		font-size: 22px;
+		font-size: 28px;
+	}
+	.directivo td:last-child {
+		padding-left: 5px;
 	}
 }

@@ -18,37 +18,49 @@
 	<div class="nosotros spacing" id="nosotros">
 		<div class="container">
 			<div class="col-sm-6 hidden-xs">
-				<img src="img/nosotros/kid.png">
+				<img src="img/nosotros/child.png">
 			</div>
 			<div class="col-sm-6 no-padding">
-				<h1 class="header green">¿QUIÉNES SOMOS?</h1>
+				<h1 class="header green text-center">¿QUIÉNES SOMOS?</h1>
 				<p class="text text-justify">
-					<span class="green">Promesa Educativa para México, A.C</span> nace en el 2011 con el objetivo de impulsar un desarrollo social verdadero a través de programas educativos de calidad que permitan a niños y jóvenes chihuahuenses desarrollar capacidades y herramientas que los impulsen a vivir con plenitud y a formar para sí mismos y sus comunidades, un mejor futuro.<br><br>
-					Con la implementación de nuestros programas, Sistema Musical Se'Wá y Colegio Riberas, buscamos promover beneficios de alto impacto que logren romper los ciclos de marginación, violencia y delincuencia que lastiman a nuestra sociedad, con el objetivo último de lograr resultados permanentes en el desarrollo humano y personal de nuestros beneficiarios para que puedan ser los protagonistas de la construcción de una mejor sociedad.
+					Somos una asociación que implementa programas educativos, creativos, permanentes, de alto impacto y cobertura que apoyan el desarrollo integral de niños y jóvenes en situación de vulnerabilidad.
 				</p>
 			</div>
 		</div>
 	</div>
 	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-	<!--/* NOSOTROS  */-->
+	<!--/* PROGRAMAS  */-->
 
 	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 	<div class="programas">
-		<div class="parallax-container">
-		<div class="parallax"><img src="img/parallax/1.jpg"></div>
-			<div class="container text-center">
-				<div class="vertical-align">
-					<h1 class="header white">NUESTROS PROGRAMAS</h1>
-					<div class="row no-margin">
-						<div class="col-sm-6">
-							<img class="img-responsive center-block" src="img/programas/smtf.png" alt="Sistema Musical">
-						</div>
-						<div class="col-sm-6">
-							<img class="img-responsive center-block" src="img/programas/riberas.png" alt="Colegio Riberas">
-						</div>
+		<div class="container text-center">
+			<div class="vertical-align">
+				<h1 class="header green">NUESTROS PROGRAMAS</h1>
+				<div class="row no-margin">
+					<div class="col-sm-6">
+						<img class="img-responsive center-block" src="img/programas/smtf.png" alt="Sistema Musical">
+						<p class="text text-justify">
+							El sistema musical Se’Wa brinda a niños y jóvenes de entre 4 y 18 años de edad la oportunidad de aprender a tocar un instrumento musical, además de adquirir todos los beneficios que esta práctica artística genera.
+						</p>
+					</div>
+					<div class="col-sm-6">
+						<img class="img-responsive center-block" src="img/programas/riberas.png" alt="Colegio Riberas">
+						<p class="text text-justify">
+							El Colegio Riberas, una escuela primaria de horario extendido con sentido social en la Colonia Riberas de Sacramento, atendiendo actualmente a  180 niños.
+						</p>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+	<div class="showcase">
+		<div class="container">
+			<div class="col-sm-6">
+				<img src="img/programas/conaculta.png" alt="" class="img-responsive center-block">
+			</div>
+			<div class="col-sm-6">
+				<img src="img/programas/network-schools.png" alt="" class="img-responsive center-block">
 			</div>
 		</div>
 	</div>
@@ -62,71 +74,30 @@
 			<h1 class="header orange">NOTICIAS</h1>
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				<!-- Indicators
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				</ol>
-				-->
-
+<ol class="carousel-indicators">
+<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+</ol>
+-->
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
 						<div class="carousel-caption">
-							<div class="row no-margin">
-								<div class="col-sm-6">
-									<img src="img/noticias/musical.png" alt="Noticia" class="img-responsive center-block">
-									<h3 class="white">Sistema Musical Se'Wá</h3>
-									<p class="text text-justify">
-										El Sistema Musical Se'Wá se vistió de gala el 3 de noviembre con el Concierto "Tocando el Futuro" donde, además de la Orquesta y Coro de Selección, participaron el Mtro. Ángel Padilla, el Mtro. Isamel Estevané y la Orquesta Filarmónica del Estado de Chihuahua.
-									</p>
+							<div class="row n no-paddingo-margin">
+								<div class="img-container">
+									<img src="img/noticias/placeholder.png" alt="Noticia" >
 								</div>
-								<div class="col-sm-6">
-									<img src="img/noticias/colegio.png" alt="Noticia" class="img-responsive center-block">
-									<h3 class="white">Colegio Ribera</h3>
-									<p class="text text-justify">
-										El día jueves 10 de septiembre, el Colegio Riberas recibió una visita muy especial: el mejor futbolista mexicano de todos los tiempos, Hugo Sánchez, quien inauguró la cancha de fútbol rápido y convivió con alumnos de la escuela y del Centro Se'Wá Riberas.
-									</p>
+								<div class="col-sm-6 no-padding hidden-xs">
 								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="carousel-caption">
-							<div class="row no-margin">
-								<div class="col-sm-6">
-									<img src="img/noticias/musical.png" alt="Noticia" class="img-responsive center-block">
-									<h3 class="white">Sistema Musical Se'Wá</h3>
-									<p class="text text-justify">
-										El Sistema Musical Se'Wá se vistió de gala el 3 de noviembre con el Concierto "Tocando el Futuro" donde, además de la Orquesta y Coro de Selección, participaron el Mtro. Ángel Padilla, el Mtro. Isamel Estevané y la Orquesta Filarmónica del Estado de Chihuahua.
-									</p>
-								</div>
-								<div class="col-sm-6">
-									<img src="img/noticias/colegio.png" alt="Noticia" class="img-responsive center-block">
-									<h3 class="white">Colegio Ribera</h3>
-									<p class="text text-justify">
-										El día jueves 10 de septiembre, el Colegio Riberas recibió una visita muy especial: el mejor futbolista mexicano de todos los tiempos, Hugo Sánchez, quien inauguró la cancha de fútbol rápido y convivió con alumnos de la escuela y del Centro Se'Wá Riberas.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="carousel-caption">
-							<div class="row no-margin">
-								<div class="col-sm-6">
-									<img src="img/noticias/musical.png" alt="Noticia" class="img-responsive center-block">
-									<h3 class="white">Sistema Musical Se'Wá</h3>
-									<p class="text text-justify">
-										El Sistema Musical Se'Wá se vistió de gala el 3 de noviembre con el Concierto "Tocando el Futuro" donde, además de la Orquesta y Coro de Selección, participaron el Mtro. Ángel Padilla, el Mtro. Isamel Estevané y la Orquesta Filarmónica del Estado de Chihuahua.
-									</p>
-								</div>
-								<div class="col-sm-6">
-									<img src="img/noticias/colegio.png" alt="Noticia" class="img-responsive center-block">
-									<h3 class="white">Colegio Ribera</h3>
-									<p class="text text-justify">
-										El día jueves 10 de septiembre, el Colegio Riberas recibió una visita muy especial: el mejor futbolista mexicano de todos los tiempos, Hugo Sánchez, quien inauguró la cancha de fútbol rápido y convivió con alumnos de la escuela y del Centro Se'Wá Riberas.
-									</p>
+								<div class="col-sm-6 no-padding">
+									<div class="news-container">
+										<p class="text text-justify white">
+											El miércoles 20 de enero, el Colegio Riberas y el Sistema Se'Wá, recibieron la visita de la diputada Maru Campos acompañada de las señoras Isabel Cheda y Ofelia Zegarra, quienes se reunieron con algunas de las consejeras de Promesa Educativa para México, A.C., convivieron con los alumnos y dieron un recorrido por las instalaciones.
+											<br>
+											¡Gracias por su visita! ¡Sumando esfuerzos, multiplicamos sueños!
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -150,7 +121,7 @@
 	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 	<div class="donaciones">
 		<div class="parallax-container">
-			<div class="parallax"><img src="img/parallax/2.jpg"></div>
+			<div class="parallax"><img src="img/parallax/bg2.jpg"></div>
 			<div class="container text-center">
 				<div class="vertical-align">
 					<h1 class="white header">¡APOYA A NUESTROS NIÑOS!</h1>
@@ -167,6 +138,7 @@
 	<!--/* CONTACTO  */-->
 
 	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+	<!--
 	<div class="contacto alt-spacing" id="contacto">
 		<div class="container">
 			<h1 class="header green text-center">ENCUENTRANOS EN</h1>
@@ -210,11 +182,12 @@
 			</div>
 		</div>
 	</div>
+	-->
 	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 	<!--/* MAPA  */-->
 
 	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-	<div class="googleMap" id="googleMap"></div>
+	<!--<div class="googleMap" id="googleMap"></div>-->
 </div>
 <?php include('footer.php'); ?>

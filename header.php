@@ -8,25 +8,21 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-default">
-
+		<div class="navbar">
 			<div class="container-fluid brand">
 				<div class="container">
-					<div class="navbar-header col-sm-3">
-						<a class="navbar-brand" href="#"><img src="img/logo.png" alt="Promesa Educativa"></a>
-					</div>
-					<div class="nav-contact col-sm-9 no-padding">
-						<div class="col-md-3 green vertical-align no-padding"><img src="" alt="">+52 (614) 413.0624</div>
-						<div class="col-md-5 green vertical-align no-padding"><img src="" alt="">promesa.educativa@gmail.com</div>
-						<div class="col-md-4 green vertical-align no-padding">
-							<img src="" alt="">
-							Teófilo Borunda Ortiz #3909<br>
-							Col. Santo Niño  Chihuahua, Chih.
+					<a class="navbar-brand" href="#"><img src="img/logo.png" alt="Promesa Educativa"></a>
+					<div class="pull-right social">
+						<div class="vertical-align">
+							<a href=""><img src="img/icons/fb.png" alt="facebook"></a>
+							<a href=""><img src="img/icons/twitter.png" alt="twitter"></a>
+							<a href=""><img src="img/icons/instagram.png" alt="instagram"></a>
 						</div>
 					</div>
 				</div>
 			</div>
-
+		</div>
+		<nav class="navbar navbar-default" id="navbar">
 			<div class="container-fluid navigation">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
@@ -39,18 +35,15 @@
 
 				<div class="collapse navbar-collapse" id="navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="#inicio">¿Quiénes Somos?</a></li>
-						<li><a href="#nosotros">Súmate</a></li>
-						<li><a href="#productos">Donaciones</a></li>
-						<li><a href="#tiendas">Programas</a></li>
-						<li><a href="#contacto">Transparencia</a></li>
-						<li><a href="#contacto">Noticias</a></li>
-						<li><a href="#contacto">Boletín</a></li>
-						<li><a href="#contacto">Galería</a></li>
-						<li><a href="#contacto">Aviso de Privacidad</a></li>
-						<li><a href="#contacto">Contacto</a></li>
+						<li><a class="vertical-align" href="#inicio">Inicio</a></li>
+						<li><a class="vertical-align" href="#nosotros">¿Quiénes Somos?</a></li>
+						<li><a class="vertical-align" href="#programas">Programas</a></li>
+						<li><a class="vertical-align" href="#galeria">Galería</a></li>
+						<li><a class="vertical-align" href="#transaprencia">Transparencia</a></li>
+						<li><a class="vertical-align" href="#contacto">Contacto</a></li>
+						<li><a class="vertical-align" href="#sumate">Súmate</a></li>
+						<li><a class="vertical-align" href="#dona">Dona Aquí</a></li>
 					</ul>
 				</div>
 			</div>
-
 		</nav>
