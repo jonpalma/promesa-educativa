@@ -99,7 +99,7 @@
 
 	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 	<div class="directivo light-spacing">
-		<img class="vertical-align hidden-xs" src="img/quienes/consejo/girl.png">
+		<img class="hidden-xs" src="img/quienes/consejo/orchestra.png">
 		<div class="container text-center">
 			<div class="col-sm-6"></div>
 			<div class="col-sm-6 no-padding">

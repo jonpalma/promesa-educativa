@@ -16,10 +16,9 @@
 
 	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 	<div class="nosotros spacing" id="nosotros">
+		<img class="hidden-xs vertical-align" src="img/nosotros/child2.png">
 		<div class="container">
-			<div class="col-sm-6 hidden-xs">
-				<img src="img/nosotros/child.png">
-			</div>
+			<div class="col-sm-6"></div>
 			<div class="col-sm-6 no-padding">
 				<h1 class="header green text-center">¿QUIÉNES SOMOS?</h1>
 				<p class="text text-justify">
@@ -73,13 +72,6 @@
 		<div class="container text-center">
 			<h1 class="header orange">NOTICIAS</h1>
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				<!-- Indicators
-<ol class="carousel-indicators">
-<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-</ol>
--->
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
@@ -133,61 +125,5 @@
 			</div>
 		</div>
 	</div>
-	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-	<!--/* CONTACTO  */-->
-
-	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-	<!--
-	<div class="contacto alt-spacing" id="contacto">
-		<div class="container">
-			<h1 class="header green text-center">ENCUENTRANOS EN</h1>
-			<div class="row no-margin">
-				<div class="col-sm-4">
-					<p>
-						<span class="green">Dirección:</span><br>
-						Av. Teófilo Borunda  No.  3903<br>
-						Col. Santo Niño CP  31120<br>
-						Chihuahua, Chih.
-					</p>
-				</div>
-				<div class="col-sm-4">
-					<p>
-						<span class="green">Teléfono:</span><br>
-						+52 (614) 413.0624
-					</p>
-				</div>
-				<div class="col-sm-4">
-					<p>
-						<span class="green">Correo:</span><br>
-						promesa.educativa@gmail.com
-					</p>
-				</div>
-			</div>
-			<div class="row no-margin">
-				<div class="col-sm-6 hidden-xs">
-					<img src="img/contacto/girl.png">
-				</div>
-				<div class="col-sm-6">
-					<h1 class="header green">¿PODEMOS AYUDARTE?</h1>
-					<form action="mailer.php" method="post">
-						<input type="text" class="green-border" name="name" id="name" placeholder="Nombre">
-						<input type="text" class="green-border" name="email" id="email" placeholder="Correo Electrónico">
-						<input type="text" class="green-border" name="address" id="address" placeholder="Dirección">
-						<input type="text" class="green-border" name="phone" id="phone" placeholder="Teléfono">
-						<textarea name="info" id="info" cols="30" rows="10" placeholder="Mensaje"></textarea>
-						<input class="green-btn white pull-right" type="submit" id="form-submit" value="Enviar">
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	-->
-	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-	<!--/* MAPA  */-->
-
-	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-	<!--<div class="googleMap" id="googleMap"></div>-->
 </div>
 <?php include('footer.php'); ?>

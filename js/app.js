@@ -9,6 +9,14 @@ $(window).scroll(function () {
 	} else if ($(window).scrollTop() < $offset && $('.navbar').hasClass('navbar-fixed-top')) {
 		$('#navbar').removeClass('navbar-fixed-top');
 	}
+	
+	/* DELAY GALLERY HOVER EFFECT */
+	$('.purple li figure').delay(500).queue(function() {
+		$(this).addClass('hover');
+	});
+	$('.green li figure').delay(500).queue(function() {
+		$(this).addClass('hover');
+	});
 });
 
 

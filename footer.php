@@ -6,7 +6,8 @@
 			</div>
 			<div class="col-sm-6">
 				<div class="row no-margin white row-align">
-					<div class="col-sm-4 vertical-align">
+					<div class="col-sm-4">
+							<img class="center-block" src="img/icons/location-white.png" alt="Dirección">
 						<p>
 							<span class="bold">Dirección:</span><br>
 							Av. Teófilo Borunda  No.  3903<br>
@@ -14,13 +15,15 @@
 							Chihuahua, Chih.
 						</p>
 					</div>
-					<div class="col-sm-4 vertical-align">
+					<div class="col-sm-4">
+							<img class="center-block" src="img/icons/phone-white.png" alt="Teléfono">
 						<p>
 							<span class="bold">Teléfono:</span><br>
 							+52 (614) 413.0624
 						</p>
 					</div>
-					<div class="col-sm-4 vertical-align">
+					<div class="col-sm-4">
+							<img class="center-block" src="img/icons/mail-white.png" alt="Correo">
 						<p>
 							<span class="bold">Correo:</span><br>
 							<span class="mail">promesa.educativa@gmail.com</span>
@@ -38,6 +41,19 @@
 <script src="js/jquery-1.12.0.min.js"></script>
 <script src="js/parallax.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/Google-Maps.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="js/grid-gallery/imagesloaded.pkgd.min.js"></script>
+<script src="js/grid-gallery/masonry.pkgd.min.js"></script>
+<script src="js/grid-gallery/classie.js"></script>
+<script src="js/grid-gallery/cbpGridGallery.js"></script>
+<script>
+	new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+	new CBPGridGallery( document.getElementById( 'grid-gallery2' ) );
+	new CBPGridGallery( document.getElementById( 'grid-gallery3' ) );
+	new CBPGridGallery( document.getElementById( 'grid-gallery4' ) );
+	new CBPGridGallery( document.getElementById( 'grid-gallery5' ) );
+</script>
 <script src="js/app.js"></script>
 </body>
 </html>

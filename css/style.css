@@ -12,6 +12,7 @@ body {
 }
 
 .wrapper {
+	overflow-x: hidden;
 }
 
 textarea {
@@ -28,6 +29,10 @@ img {
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	*/
+}
+
+a:focus {
+	outline: none!important;
 }
 
 .spacing {
@@ -74,8 +79,21 @@ h3.header {
 	color: #939598;
 }
 
-.text {
-	color: #58585a;
+.green-black {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 50px;
+	color: #231f20;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.green-black:first-line {
+	font-size: 60px;
+	color: #6ebf49;
+}
+
+.text, .text2 {
+	color: #808285;
 	font-size: 18px;
 	line-height: 35px;
 	font-family: 'Roboto', sans-serif;
@@ -87,6 +105,10 @@ h3.header {
 
 .no-padding {
 	padding: 0;
+}
+
+.no-padding-top {
+	padding-top: 0;
 }
 
 .vertical-align {
@@ -102,8 +124,21 @@ h3.header {
 	color: #fff!important;
 }
 
+.black {
+	color: #231f20;
+}
+
 .green {
 	color: #bfd42d;
+}
+
+.green2 {
+	text-transform: uppercase;
+	color: #6ebf49;
+}
+
+h4.green2 {
+	font-weight: 700;
 }
 
 .orange {
@@ -112,6 +147,14 @@ h3.header {
 
 .gray {
 	color: #c4c5c6;
+}
+
+.gray-dark {
+	color: #808285;
+}
+
+.black-bg {
+	background-color: #231f20;
 }
 
 .green-btn {
@@ -130,21 +173,21 @@ h3.header {
 	background-color: #e3e3e3;
 }
 
+.gray-btn {
+	background-color: #939598;
+}
+
+.gray-btn:hover {
+	background-color: #818386;
+}
+
 .text-justify {
 	text-align-last: center;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-	color: #9ecb3b;
-}
-::-moz-placeholder { /* Firefox 19+ */
-	color: #9ecb3b;
-}
-:-ms-input-placeholder { /* IE 10+ */
-	color: #9ecb3b;
-}
-:-moz-placeholder { /* Firefox 18- */
-	color: #9ecb3b;
+.table-row [class^="col-"] {
+	display: table-cell;
+	float: none;
 }
 /*** GENERAL STYLES ***/
 
@@ -153,6 +196,7 @@ h3.header {
 	border-radius: 0;
 	border: 0;
 	margin-bottom: 0;
+	z-index: 2;
 }
 
 .navbar .container-fluid.brand {
@@ -218,6 +262,11 @@ h3.header {
 	margin: 0!important;
 	width: calc(12.5% - 3.919px);
 	height: 70px;
+	transition: background-color 200ms ease;
+}
+
+.navbar-nav>li:hover {
+	/*background-color: #8cb334;*/
 }
 
 .navbar-nav>li>a {
@@ -241,6 +290,79 @@ h3.header {
 .navbar-nav>li:last-child>a {
 	color: #9fcc3b!important;
 }
+
+.navbar-black .navbar-collapse {
+	background-color: #231f20;
+}
+
+.navbar-black .navbar-nav:after {
+	background-color: #6ebf49;
+}
+
+.navbar-black .navbar-nav>li:last-child {
+	background-color: #6ebf49!important;
+}
+
+.navbar-black .navbar-nav>li:last-child>a {
+	color: #fff!important;
+}
+
+.navbar-yellow .navbar-collapse {
+	background-color: #fdd700;
+}
+
+.navbar-yellow .navbar-nav>li:last-child>a {
+	color: #fdd700!important;
+}
+
+.navbar .dropdown.open {
+	background-color: #8cb334;
+}
+
+.navbar .dropdown>a {
+	background: inherit!important;
+}
+
+.navbar .dropdown-menu {
+	border-radius: 0;
+	background-color: #9fcc3b;
+	color: #fff;
+	padding: 0;
+	border: 0;
+}
+
+.navbar .dropdown-menu a {
+	color: #fff!important;
+	background-color: inherit!important;
+}
+
+.navbar .dropdown-menu a:hover {
+	background-color: #8cb334!important;
+}
+
+.navbar-black .dropdown.open {
+	background-color: #2e2a2b;
+}
+
+.navbar-black .dropdown-menu {
+	background-color: #231f20;
+}
+
+.navbar-black .dropdown-menu a:hover {
+	background-color: #2e2a2b!important;
+}
+
+.navbar-yellow .dropdown.open {
+	background-color: #f0cc00;
+}
+
+.navbar-yellow .dropdown-menu {
+	background-color: #fdd700;
+}
+
+.navbar-yellow .dropdown-menu a:hover {
+	background-color: #f0cc00!important;
+}
 /*** NAVBAR ***/
 
 /*** BANNER ***/
@@ -261,19 +383,24 @@ h3.header {
 .banner-header:first-line {
 	color: #ffffff;
 }
+
+.banner img {
+	max-width: 80%;
+}
 /*** BANNER ***/
 
 /*** NOSOTROS ***/
 .nosotros {
 	padding: 200px 15px;
 	overflow: hidden;
+	position: relative;
 }
 
 .nosotros img {
-	position: absolute;
-	right: 0;
-	top: -170px;
+	position: absolute!important;
+	/*top: -170px;*/
 	min-width: 50vw!important;
+	right: 50%;
 }
 
 .nosotros span {
@@ -383,8 +510,14 @@ h3.header {
 /*** DONACIONES ***/
 
 /*** CONTACTO ***/
+.contacto .banner {
+	background: url(../img/banner/contacto.jpg) no-repeat center center;
+	background-size: cover;
+}
+
 .contacto input[type=text],
-.contacto textarea {
+.contacto textarea, .input-green,
+.input-white {
 	border: 1px solid #9ecb3b;
 	min-height: 50px;
 	width: 100%;
@@ -394,16 +527,41 @@ h3.header {
 	outline: none;
 }
 
+.input-white {
+	border: 1px solid #fff;
+	background: transparent;
+	color: #ffffff;
+}
+
+.input-white::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color:    #fff;
+}
+.input-white:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color:    #fff;
+	opacity:  1;
+}
+.input-white::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color:    #fff;
+	opacity:  1;
+}
+.input-white:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color:    #fff;
+}
+.input-white:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+	color:    #fff;
+}
+
 .contacto input[type=text]:focus,
-.contacto textarea:focus {
+.contacto textarea:focus, .input-green:focus,
+.input-white:focus {
 	box-shadow: 3px 3px 3px 3px rgba(0,0,0,.3)
 }
 
-.contacto textarea {
+.contacto textarea, textarea.input-green, textarea.input-white {
 	padding-top: 15px;
 }
 
-.contacto input[type=submit] {
+.contacto input[type=submit], .submit {
 	border: 0;
 	height: 48px;
 	width: 100px;
@@ -412,15 +570,35 @@ h3.header {
 	font-family: 'Myriad Pro';
 }
 
-.contacto img {
-	position: absolute;
-	right: -150px;
-	min-width: 55vw;
-	z-index: -1;
-}
-
 .contacto p {
 	margin-bottom: 50px;
+}
+
+.contacto .direccion:before,
+.contacto .telefono:before,
+.contacto .correo:before {
+	position: absolute;
+	margin-left: -18px;
+}
+
+.contacto .direccion:before {
+	content: url(../img/icons/location.png);
+}
+
+.contacto .telefono:before {
+	content: url(../img/icons/phone.png);
+}
+
+.contacto .correo:before {
+	content: url(../img/icons/mail.png);
+}
+
+.contacto .col-sm-6:last-child {
+	border-left: 1px solid #9fcc3b; 
+}
+
+.googleMap {
+	height: 235px;
 }
 /*** CONTACTO ***/
 
@@ -485,8 +663,9 @@ h3.header {
 .directivo img {
 	position: absolute;
 	z-index: -1;
-	height: 100%;
-	left: 0;
+	right: 50%;
+	width: 50vw;
+	top: 0;
 }
 
 .directivo table {
@@ -578,6 +757,186 @@ h3.header {
 }
 /*** TRANSPARENCIA ***/
 
+/*** GALERIA ***/
+.galeria .banner {
+	background: url(../img/banner/galeria.jpg) no-repeat center center;
+	background-size: cover;
+}
+/*** GALERIA ***/
+
+/*** SÚMATE ***/
+.sumate .banner {
+	background: url(../img/banner/sumate.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.voluntariado h1, .voluntariado h3,
+.donantes h1, .donantes h3{
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.voluntariado h3, .donantes h3 {
+	margin: 0;
+	color: #9ecb3b;
+	font-weight: 700;
+	font-size: 36px;
+	font-family: 'Myriad Pro';
+}
+
+.voluntariado h3:first-line {
+	font-size: 25px;
+	color: #939598;
+}
+
+.voluntariado h1, .donantes h1 {
+	font-family: 'Myriad Pro';
+	font-size: 61px;
+	color: #939598;
+}
+
+.donantes {
+	background-color: #939598;
+}
+
+.donacion p {
+	margin-bottom: 30px;
+}
+
+.donacion a {
+	height: 45px;
+	width: 102px;
+	line-height: 45px;
+	font-size: 14px;
+	text-decoration: none!important;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+/*** SÚMATE ***/
+
+/*** SEWA ***/
+.sewa .banner {
+	background: url(../img/banner/sewa.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.conocenos {
+	position: relative;
+	overflow: hidden;
+}
+
+.conocenos img {
+	position: absolute;
+	right: 0;
+	z-index: -1;
+	max-width: 35vw;
+	max-height: 100%;
+}
+
+.centros .element-container {
+	position: relative;
+	background-color: #6ebf49;
+}
+
+.centros .col-sm-4 {
+	padding: 10px;
+}
+
+.centros h3 {
+	margin-top: 0;
+	font-weight: 700;
+	font-size: 28px;
+}
+
+.centros .text-container {
+	padding: 15px;
+	/*position: absolute;
+	z-index: 1;
+	top: 40%;
+	width: 100%;
+	padding: 15px;*/
+}
+
+.eventos .row {
+	margin-bottom: 10px;
+}
+
+.eventos .col-sm-4 {
+	border: 1px solid #808285;
+}
+
+.eventos h3 {
+	color: #6ebf49;
+	font-weight: 700;
+	font-family: 'Merriweather Sans', sans-serif;
+	margin-bottom: 5px;
+	padding-left: 23px;
+}
+
+.eventos h3:first-line {
+	padding-left: 30px;
+}
+
+.eventos h3:before {
+	content: url(../img/programas/sewa/eventos/notepad.png);
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+.eventos p.gray {
+	font-size: 18px;
+	font-weight: 700;
+	color: #808285;
+	padding-left: 23px;
+}
+/*** SEWA ***/
+
+/*** RIBERAS ***/
+.riberas .banner {
+	background: url(../img/banner/ribera.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.riberas .banner img {
+	max-width: 45%;
+	margin-left: -40%;
+	margin-top: -15%;
+}
+
+.riberas .quienes {
+	position: relative;
+	overflow: hidden;
+}
+
+.riberas .quienes img {
+	position: absolute;
+	left: 0;
+	max-width: 45vw;
+}
+
+.riberas .valores {
+	background: #fff;
+}
+
+.riberas .col-7, .riberas .col-4 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 5px;
+	padding-left: 5px;
+	float: left;
+}
+
+.riberas .col-7 {
+	width: calc(100% / 7);
+}
+
+.riberas .valores p {
+	font-size: 14px;
+	position: relative;
+}
+/*** RIBERAS ***/
+
 /*** FOOTER ***/
 footer {
 	background-color: #fff;
@@ -606,11 +965,20 @@ footer {
 	word-break: break-all;
 }
 
-.footer-top img:first-child {
+.footer-top .col-sm-6:first-child img {
 	max-height: 120px;
 	max-width: 90%;
 	float: right;
 	padding-right: 50px;
+}
+
+.footer-top .col-sm-6:nth-child(2) img {
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+.footer-top .col-sm-4 {
+	padding: 0px!important;
 }
 
 .footer-rights {
@@ -672,8 +1040,17 @@ footer {
 	.header {
 		font-size: 42px;
 	}
+	h3.header {
+		font-size: 38px;
+	}
 	.first-big:first-line, .gray-green-header:first-line {
 		font-size: 42px;
+	}
+	.green-black {
+		font-size: 36px;
+	}
+	.green-black:first-line {
+		font-size: 43px;
 	}
 	.first-big {
 		font-size: 30px;
@@ -690,8 +1067,23 @@ footer {
 	.mision .col-sm-6:last-child {
 		padding-left: 60px;
 	}
-	.directivo img {
-		left: -8%;
+	.voluntariado h3, .donantes h3 {
+		font-size: 26px;
+	}
+	.voluntariado h3:first-line {
+		font-size: 20px;
+	}
+	.voluntariado h1, .donantes h1 {
+		font-size: 45px;
+	}
+	.riberas .valores p {
+		font-size: 12px;
+	}
+	.riberas .col-4 {
+		width: calc(100% / 4);
+	}
+	.riberas .col-5 {
+		width: calc(100% / 5);
 	}
 }
 
@@ -699,6 +1091,15 @@ footer {
 	.header {
 		font-size: 32px;
 		margin-bottom: 20px;
+	}
+	h3.header {
+		font-size: 30px;
+	}
+	.green-black {
+		font-size: 26px;
+	}
+	.green-black:first-line {
+		font-size: 33px;
 	}
 	.first-big:first-line {
 		font-size: 32px;
@@ -718,6 +1119,9 @@ footer {
 		transform: translateY(0);
 		text-align: right;
 	}
+	.navbar .container {
+		width: auto;
+	}
 	.banner-header {
 		font-size: 50px;
 	}
@@ -733,11 +1137,12 @@ footer {
 	.mision .col-sm-6:last-child {
 		padding-left: 30px;
 	}
-	.directivo img {
-		left: -20%;
-	}
 	.directivo td:last-child {
 		padding-left: 25px;
+	}
+	.directivo img {
+		width: auto;
+		height: 100%;
 	}
 	.boletin a {
 		height: 65px;
@@ -745,12 +1150,39 @@ footer {
 		line-height: 65px;
 		font-size: 25px;
 	}
+	.footer-top .col-sm-6:nth-child(2) img {
+		padding-top: 30px;
+	}
+	.voluntariado h3:first-line {
+		font-size: 18px;
+	}
+	.voluntariado h1, .donantes h1 {
+		font-size: 43px;
+	}
+	.riberas .valores p {
+		font-size: 10px;
+	}
 }
 
 @media (max-width: 767px) {
+	.banner {
+		height: calc(100vh - 157px);
+	}
 	.spacing,
 	.alt-spacing {
 		padding: 50px 15px;
+	}
+	.header {
+		font-size: 22px;
+	}
+	.first-big:first-line {
+		font-size: 32px;
+	}
+	h3.header {
+		font-size: 20px;
+	}
+	.table-row [class^="col-"] {
+		display: block;
 	}
 	.navbar {
 		background: transparent;
@@ -759,7 +1191,7 @@ footer {
 		padding: 15px;
 	}
 	.navbar .container-fluid.navigation .navbar-header {
-		background-color: #bfd42d;
+		background-color: #9fcc3b;
 	}
 	.navbar-brand {
 		padding: 0;
@@ -780,7 +1212,7 @@ footer {
 		transform: none;
 	}
 	.navbar-toggle:focus, .navbar-toggle:hover {
-		background-color: #b4c82a!important;
+		background-color: #8cb334!important;
 	}
 	#navbar .navbar-header {
 		margin: 0;
@@ -793,8 +1225,10 @@ footer {
 		position: absolute;
 		left: 0;
 		z-index: 1;
-		height: auto!important;
 		background: transparent;
+	}
+	.navbar .navbar-collapse.in {
+		height: auto!important;
 	}
 	.navbar-nav {
 		padding: 0!important;
@@ -804,7 +1238,7 @@ footer {
 		width: 200px;
 		float: right;
 		text-align: right;
-		background-color: #bfd42d;
+		background-color: #9fcc3b;
 		height: auto;
 	}
 	.navbar-nav:after {
@@ -815,16 +1249,59 @@ footer {
 		height: auto;
 		width: auto;
 	}
-	.navbar-nav>li:hover {
-		background-color: #b4c82a;
+	.navbar-green .navbar-nav>li:hover {
+		background-color: #8cb334;
 	}
-	.navbar-nav>li:last-child:hover {
+	.navbar-green .navbar-nav>li:last-child:hover {
 		background-color: #eeeeee!important;
 	}
 	.navbar-nav>li>a {
 		position: relative;
 		transform: none;
 		padding: 10px!important;
+	}
+	.navbar-fixed-top .navbar-collapse {
+		max-height: none;
+	}
+	.navbar .dropdown li {
+		text-align: right;
+	}
+	.navbar-black .container-fluid.navigation .navbar-header,
+	.navbar-black .navbar-nav {
+		background-color: #231f20;
+	}
+	.navbar-black .navbar-nav>li:hover {
+		background-color: #2e2a2b;
+	}
+	.navbar-black .navbar-nav>li:last-child:hover {
+		background-color: #61a840!important;
+	}
+	.navbar-yellow .container-fluid.navigation .navbar-header,
+	.navbar-yellow .navbar-nav {
+		background-color: #fdd700;
+	}
+	.navbar-yellow .navbar-nav>li:hover {
+		background-color: #f0cc00;
+	}
+	.navbar-yellow .navbar-nav>li:last-child:hover {
+		background-color: #eeeeee!important;
+	}
+	.navbar-green .dropdown li {
+		background-color: #9fcc3b;
+	}
+	.navbar-black .dropdown li {
+		background-color: #231f20;
+	}
+	.navbar-yellow .dropdown li {
+		background-color: #fdd700;
+	}
+	.navbar-black .navbar-toggle:hover,
+	.navbar-black .navbar-toggle:focus {
+		background-color: #2e2a2b!important;
+	}
+	.navbar-yellow .navbar-toggle:hover,
+	.navbar-yellow .navbar-toggle:focus {
+		background-color: #f0cc00!important;
 	}
 	.banner-header {
 		font-size: 43px;
@@ -885,13 +1362,57 @@ footer {
 	.mision .col-sm-6:last-child {
 		padding: 0;
 	}
+	.voluntariado h3, .donantes h3 {
+		font-size: 20px;
+		text-align: center;
+		max-width: 320px;
+		margin: 0 auto;
+	}
+	.voluntariado h3:first-line {
+		font-size: 18px;
+	}
+	.voluntariado h1, .donantes h1 {
+		font-size: 40px;
+		text-align: center;
+	}
+	.centros .element-container {
+		max-width: 374px;
+		margin: 0 auto;
+	}
+	.eventos h3 {
+		font-size: 18px;
+	}
+	.eventos p.gray {
+		font-size: 15px;
+	}
+	.riberas .valores div[class^='col-'] {
+		width: 100%;
+		margin: 0 auto;
+		min-height: 0;
+		float: none;
+	}
 }
 
 @media (max-width: 480px) {
 	.banner-header {
 		font-size: 28px;
 	}
+	.green-black {
+		font-size: 18px;
+	}
+	.green-black:first-line {
+		font-size: 22px;
+	}
 	.directivo td:last-child {
 		padding-left: 5px;
+	}
+	.voluntariado h3, .donantes h3 {
+		font-size: 18px;
+	}
+	.voluntariado h3:first-line {
+		font-size: 16px;
+	}
+	.voluntariado h1, .donantes h1 {
+		font-size: 24px;
 	}
 }
