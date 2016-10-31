@@ -118,7 +118,7 @@ player.mute();
         <div class="ong">
             <div class="small-banner">
                 <div class="vertical-align">
-                    <h1 class="white header">ONG Alliances</h1>
+                    <h1 class="white header">NGO Alliances</h1>
                 </div>
             </div>
             <div class="container light-spacing">
@@ -147,7 +147,7 @@ player.mute();
         <div class="gubernamentales">
             <div class="small-banner">
                 <div class="vertical-align">
-                    <h1 class="white header">Gubernamental Alliances</h1>
+                    <h1 class="white header">Government Partnerships</h1>
                 </div>
             </div>
             <div class="container light-spacing">
@@ -176,7 +176,7 @@ player.mute();
         <div class="otras">
             <div class="small-banner">
                 <div class="vertical-align">
-                    <h1 class="white header">Other Alliances</h1>
+                    <h1 class="white header">Other Partnerships</h1>
                 </div>
             </div>
             <div class="container light-spacing no-spacing-bottom">

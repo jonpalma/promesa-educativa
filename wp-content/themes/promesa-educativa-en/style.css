@@ -286,7 +286,7 @@ h4.green2 {
 
 .navbar:nth-child(2) {
     background: transparent;
-    position: absolute;
+    position: relative;
     width: 100%;
 }
 
@@ -440,6 +440,20 @@ h4.green2 {
     background-size: cover;*/
     background-color: #000;
     position: relative;
+    overflow: hidden;
+}
+
+.banner-img {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    max-width: initial!important;
+    margin: auto!important;
 }
 
 .banner-header {
@@ -666,6 +680,7 @@ h4.green2 {
 
 #video-modal iframe {
     max-width: 100%;
+    border: 0;
 }
 
 #video-modal button {
@@ -686,7 +701,7 @@ h4.green2 {
 
 /*** CONTACTO ***/
 .contacto .banner {
-    background: url(img/banner/contacto.jpg) no-repeat center center;
+    /*background: url(img/banner/contacto.jpg) no-repeat center center;*/
     background-size: cover;
 }
 
@@ -786,7 +801,7 @@ h4.green2 {
 /*** QUIENES SOMOS ***/
 /*** BANNER ***/
 .quienes .banner {
-    background: url(img/banner/quienes-somos.jpg) no-repeat center center;
+    /*background: url(img/banner/quienes-somos.jpg) no-repeat center center;*/
     background-size: cover;
 }
 
@@ -894,7 +909,7 @@ h4.green2 {
 
 /*** TRANSPARENCIA ***/
 .transparencia .banner {
-    background: url(img/banner/transparencia.jpg) no-repeat center center;
+    /*background: url(img/banner/transparencia.jpg) no-repeat center center;*/
     background-size: cover;
 }
 
@@ -950,14 +965,14 @@ h4.green2 {
 
 /*** GALERIA ***/
 .galeria .banner {
-    background: url(img/banner/galeria.jpg) no-repeat center center;
+    /*background: url(img/banner/galeria.jpg) no-repeat center center;*/
     background-size: cover;
 }
 /*** GALERIA ***/
 
 /*** SÚMATE ***/
 .sumate .banner {
-    background: url(img/banner/sumate.jpg) no-repeat center center;
+    /*background: url(img/banner/sumate.jpg) no-repeat center center;*/
     background-size: cover;
     text-shadow: 1px 1px rgba(0,0,0,.8), -1px 1px rgba(0,0,0,.8);
 }
@@ -992,7 +1007,7 @@ h4.green2 {
 }
 
 .donacion.banner {
-    background: url(img/banner/contacto2.jpg)no-repeat center center;
+    /*background: url(img/banner/contacto2.jpg)no-repeat center center;*/
     background-size: cover;
     text-shadow: none;
 }
@@ -1047,7 +1062,7 @@ h4.green2 {
 
 /*** SEWA ***/
 .sewa .banner {
-    background: url(img/banner/sewa.jpg) no-repeat center center;
+    /*background: url(img/banner/sewa.jpg) no-repeat center center;*/
     background-size: cover;
 }
 
@@ -1125,7 +1140,7 @@ h4.green2 {
 
 /*** RIBERAS ***/
 .riberas .banner {
-    background: url(img/banner/ribera.jpg) no-repeat center center;
+    /*background: url(img/banner/ribera.jpg) no-repeat center center;*/
     background-size: cover;
 }
 

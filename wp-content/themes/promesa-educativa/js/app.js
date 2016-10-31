@@ -80,3 +80,7 @@ function set_news_size () {
 		$(this).css('height',$height+'px');
 	});
 }
+
+$("video").click( function (){
+    $(this).prop('muted', !$(this).prop('muted'));
+});

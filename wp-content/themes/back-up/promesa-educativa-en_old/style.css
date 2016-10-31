@@ -1,0 +1,1695 @@
+/*
+Theme Name: Promesa Educativa
+Theme URL: http://
+Author: Agencia Mixen
+Author URL: http://mixen.mx/
+Description: Tema para el sitio de Promesa Educativa.
+Version: 1.0
+Text Domain: Mixen Communication & Web Technology
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(fonts/HelveticaNeueBold.otf);
+}
+
+/*** GENERAL STYLES ***/
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    overflow-x: hidden;
+}
+
+textarea {
+    resize: none;
+}
+
+/* IMG NOT DRAGGABLE */
+img {
+    /*
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    */
+}
+
+a:focus {
+    outline: none!important;
+}
+
+.spacing {
+    padding: 100px 15px;
+}
+
+.light-spacing {
+    padding: 50px 15px;
+}
+
+.no-spacing-top {
+    padding-top: 0;
+}
+
+.no-spacing-bottom {
+    padding-bottom: 0;
+}
+
+.alt-spacing {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.header {
+    font-weight: 700;
+    font-size: 50px;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-bottom: 50px;
+}
+
+h3.header {
+    font-size: 40px;
+}
+
+.first-big:first-line {
+    font-size: 60px;
+}
+
+.first-big {
+    font-size: 40px;
+}
+
+.gray-green-header {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #C3D500;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.gray-green-header:first-line {
+    font-size: 60px;
+    color: #939598;
+}
+
+.green-black {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 50px;
+    color: #231f20;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.green-black:first-line {
+    font-size: 60px;
+    color: #6ebf49;
+}
+
+.yellow {
+    color: #fcd703!important;
+}
+
+.blue {
+    color: #25c2e6!important;
+}
+
+.orange {
+    color: #f06a22!important;
+}
+
+.purple {
+    color: #7a3695!important;
+}
+
+.green-alt {
+    color: #9ecb3b!important;
+}
+
+.text, .text2, .donacion .mail-to {
+    color: #808285;
+    font-size: 18px;
+    line-height: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-padding-top {
+    padding-top: 0;
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.white {
+    color: #fff!important;
+}
+
+.black {
+    color: #231f20;
+}
+
+.green {
+    color: #bfd42d;
+}
+
+a.green {
+    color: #bfd42d!important;
+}
+
+.green2 {
+    text-transform: uppercase;
+    color: #6ebf49;
+}
+
+h4.green2 {
+    font-weight: 700;
+}
+
+.orange {
+    color: #f06c25;
+}
+
+.gray {
+    color: #c4c5c6;
+}
+
+.gray-dark {
+    color: #808285;
+}
+
+.black-bg {
+    background-color: #231f20;
+}
+
+.green-btn {
+    background-color: #C3D500;
+}
+
+.green-btn:hover {
+    background-color: #abbb00;
+}
+
+.white-btn {
+    background-color: #fff;
+}
+
+.white-btn:hover {
+    background-color: #e3e3e3;
+}
+
+.gray-btn {
+    background-color: #939598;
+}
+
+.gray-btn:hover {
+    background-color: #818386;
+}
+
+.text-justify {
+    text-align-last: center;
+}
+
+.text-justify-normal {
+    text-align: justify;
+}
+
+.table-row {
+    display: table;
+    width: 100%;
+}
+
+.table-row [class^="col-"] {
+    display: table-cell;
+    float: none;
+}
+
+.table-row-margin-bottom {
+    margin-bottom: -30px;
+}
+
+.screen-reader-response {
+    display: none;
+}
+/*** GENERAL STYLES ***/
+
+/*** NAVBAR ***/
+.navbar {
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
+    z-index: 2;
+}
+
+#navbar {
+    z-index: 999;
+}
+
+.navbar .container-fluid.brand {
+    min-height: 86px;
+    background-color: #ffffff;
+}
+
+.navbar .container-fluid.brand .navbar-header {
+    min-height: 86px;
+}
+
+.navbar .social {
+    height: 86px;
+}
+
+.navbar-brand {
+    padding-top: 0;
+}
+
+.navbar:nth-child(2) {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar-fixed-top {
+    position: fixed!important;
+}
+
+.navbar:nth-child(2) .container-fluid {
+    padding: 0;
+}
+
+.navbar .collapse {
+    background-color: #C3D500;
+    max-width: 1230px;
+    text-align: center!important;
+    margin: 0 auto;
+    padding: 0!important;
+    height: 70px!important;
+}
+
+.navbar-nav {
+    float: none;
+    height: 70px;
+    position: relative;
+}
+
+.navbar-nav:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 10px;
+    background-color: #fff;
+}
+
+.navbar-nav>li {
+    float: none;
+    display: inline-block;
+    padding: 0!important;
+    margin: 0!important;
+    width: calc(12.5% - 4px);
+    height: 70px;
+    transition: background-color 200ms ease;
+}
+
+.navbar-nav>li:hover {
+    /*background-color: #abbb00;*/
+}
+
+.navbar-nav>li>a {
+    color: #fff!important;
+    /*padding: 22px 40.5px;*/
+    margin: 0!important;
+    padding: 0!important;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.navbar-nav>li>a:hover {
+    color: #e3e3e3!important;
+}
+
+.navbar-nav>li:last-child {
+    background-color: #ffffff!important;
+}
+
+.navbar-nav>li:last-child>a {
+    color: #C3D500!important;
+}
+
+.navbar-black .navbar-collapse {
+    background-color: #231f20;
+}
+
+.navbar-black .navbar-nav:after {
+    background-color: #6ebf49;
+}
+
+.navbar-black .navbar-nav>li:last-child {
+    background-color: #6ebf49!important;
+}
+
+.navbar-black .navbar-nav>li:last-child>a {
+    color: #fff!important;
+}
+
+.navbar-yellow .navbar-collapse {
+    background-color: #fdd700;
+}
+
+.navbar-yellow .navbar-nav>li:last-child>a {
+    color: #fdd700!important;
+}
+
+.navbar .dropdown.open {
+    background-color: #abbb00;
+}
+
+.navbar .dropdown>a {
+    background: inherit!important;
+}
+
+.navbar .dropdown-menu {
+    border-radius: 0;
+    background-color: #C3D500;
+    color: #fff;
+    padding: 0;
+    border: 0;
+}
+
+.navbar .dropdown-menu a {
+    color: #fff!important;
+    background-color: inherit!important;
+}
+
+.navbar .dropdown-menu a:hover {
+    background-color: #abbb00!important;
+}
+
+.navbar-black .dropdown.open {
+    background-color: #2e2a2b;
+}
+
+.navbar-black .dropdown-menu {
+    background-color: #231f20;
+}
+
+.navbar-black .dropdown-menu a:hover {
+    background-color: #2e2a2b!important;
+}
+
+.navbar-yellow .dropdown.open {
+    background-color: #f0cc00;
+}
+
+.navbar-yellow .dropdown-menu {
+    background-color: #fdd700;
+}
+
+.navbar-yellow .dropdown-menu a:hover {
+    background-color: #f0cc00!important;
+}
+/*** NAVBAR ***/
+
+/*** BANNER ***/
+.banner {
+    height: calc( 100vh - 86px);
+    /*background: url(img/banner/bg.jpg) no-repeat center center;
+    background-size: cover;*/
+    background-color: #000;
+    position: relative;
+}
+
+.banner-header {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 80px;
+    font-family: HelveticaNeue;
+    color: #bfd42d;
+}
+
+.banner-header:first-line {
+    color: #ffffff;
+}
+
+.banner img {
+    max-width: 80%;
+}
+
+.banner iframe, .banner video {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+/*** BANNER ***/
+
+/*** NOSOTROS ***/
+.nosotros {
+    padding: 200px 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.nosotros img {
+    position: absolute!important;
+    /*top: -170px;*/
+    min-width: 50vw!important;
+    right: 50%;
+}
+
+.nosotros span {
+    font-weight: 500;
+}
+
+.showcase {
+    background-color: rgba(147, 149, 152, 0.33);
+    padding: 50px 0;
+}
+/*** NOSOTROS ***/
+
+/*** PROGRAMAS ***/
+.programas {
+    background: url(img/parallax/bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.programas .container {
+    height: 610px;
+}
+
+.programas .container img {
+    max-width: 90%;
+    margin-bottom: 20px;
+}
+/*** PROGRAMAS ***/
+
+/*** ALIANZAS ***/
+.alianzas .small-banner {
+    background-size: cover!important;
+    height: 194px;    
+}
+
+.alianzas .col-sm-3 {
+    height: 150px;
+}
+
+.alianzas p {
+    font-family: Arial;
+    line-height: 1;
+    font-weight: 700;
+    color: #4e4e4e;
+}
+
+.alianzas .small-banner h1 {
+    margin: 0;
+}
+
+.alianzas .gubernamentales .small-banner {
+    background: url(img/alianzas/gubernamentales.jpg) no-repeat center center;
+}
+
+.alianzas .ong .small-banner {
+    background: url(img/alianzas/ong.jpg) no-repeat center center;
+}
+
+.alianzas .educativas .small-banner {
+    background: url(img/alianzas/educativas.jpg) no-repeat center center;
+}
+
+.alianzas .otras .small-banner {
+    background: url(img/alianzas/otras.jpg) no-repeat center center;
+}
+/*** ALIANZAS ***/
+
+/*** NOTICIAS ***/
+.noticias .row {
+    position: relative;
+}
+
+.noticias .carousel-inner {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.noticias .carousel-caption {
+    margin: 0 auto;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-shadow: none;
+    color: inherit;
+    padding: 0;
+    overflow: hidden;
+}
+
+.noticias .carousel-caption img {
+    position: absolute;
+    left: 0;
+    min-height: 100%;
+    z-index: -1;
+    min-width: 50%;
+}
+
+.noticias .carousel-caption .news-container {
+    background-color: #C3D500;
+}
+
+.noticias .carousel-caption .news-container:before {
+    content: '';
+    position: absolute;
+    background: #C3D500;
+    height: 100vh;
+    width: 50%;
+    transform: skew(-10deg);
+    left: -88px;
+    z-index: -1;
+}
+
+.noticias .carousel-caption p {
+    margin: 0;
+    padding: 15px;
+}
+
+.noticias .carousel-control.left:before, .noticias .carousel-control.right:before {
+    position: absolute;
+    top: calc(50% - 22px);
+}
+
+.noticias .carousel-control {
+    background-image: none;
+}
+
+.noticias .carousel-control.left:before {
+    content: url(img/noticias/left.png);
+    left: 0%;
+}
+
+.noticias .carousel-control.right:before {
+    content: url(img/noticias/right.png);
+    right: 0%;
+}
+
+.noticias .row, .noticias .carousel-caption, .noticias .news-container, .noticias .col-sm-6:last-child {
+    height: 100%!important;
+}
+/*** NOTICIAS ***/
+
+/*** DONACIONES ***/
+.donaciones .container {
+    height: 486px;
+}
+
+.donaciones a {
+    height: 85px;
+    line-height: 85px;
+    width: 343px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.donaciones a {
+    text-decoration: none;
+    margin-top: 30px;
+}
+/*** DONACIONES ***/
+
+/*** VIDEO ***/
+.video .caption {
+    width: 100%;
+    position: absolute;
+}
+
+#video-modal.in {
+    padding-left: 17px;
+}
+
+#video-modal .modal-dialog {
+    margin: 0;
+    width: 100%;
+}
+
+#video-modal .modal-content {
+    background: transparent;
+    box-shadow: none;
+    border: 0;
+    max-width: 970px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+#video-modal iframe {
+    max-width: 100%;
+}
+
+#video-modal button {
+    height: 60px;
+    width: 236px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #9ecb3b;
+    border: 0;
+    max-width: 100%;
+}
+
+#video-modal button:hover {
+    background-color: #8bb234;
+}
+/*** VIDEO ***/
+
+/*** CONTACTO ***/
+.contacto .banner {
+    background: url(img/banner/contacto.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.contacto input[type=text],
+.contacto input[type=email],
+.contacto textarea, .input-green,
+.input-white {
+    border: 1px solid #9ecb3b;
+    min-height: 50px;
+    width: 100%;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    font-size: 10px;
+    outline: none;
+}
+
+.input-white {
+    border: 1px solid #fff;
+    background: transparent;
+    color: #ffffff;
+}
+
+.input-white::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+.input-white:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+    opacity:  1;
+}
+.input-white::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+    opacity:  1;
+}
+.input-white:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #fff;
+}
+.input-white:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+    color:    #fff;
+}
+
+.contacto input[type=text]:focus,
+.contacto input[type=email]:focus,
+.contacto textarea:focus, .input-green:focus,
+.input-white:focus {
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,.3)
+}
+
+.contacto textarea, textarea.input-green, textarea.input-white {
+    padding-top: 15px;
+}
+
+.contacto input[type=submit], .submit {
+    border: 0;
+    height: 48px;
+    width: 100px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: 'Myriad Pro';
+}
+
+.contacto p {
+    margin-bottom: 50px;
+}
+
+.contacto .direccion:before,
+.contacto .telefono:before,
+.contacto .correo:before {
+    position: absolute;
+    margin-left: -18px;
+}
+
+.contacto .direccion:before {
+    content: url(img/icons/location.png);
+}
+
+.contacto .telefono:before {
+    content: url(img/icons/phone.png);
+}
+
+.contacto .correo:before {
+    content: url(img/icons/mail.png);
+}
+
+.contacto .col-sm-6:last-child {
+    border-left: 1px solid #C3D500; 
+}
+
+.googleMap {
+    height: 235px;
+}
+
+#Map {
+    height: 400px;
+}
+/*** CONTACTO ***/
+
+/*** QUIENES SOMOS ***/
+/*** BANNER ***/
+.quienes .banner {
+    background: url(img/banner/quienes-somos.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.quienes .presentacion a {
+    max-width: 500px;
+    height: 100px;
+    font-size: 28px;
+    line-height: 100px;
+    text-decoration: none!important;
+}
+/*** BANNER ***/
+
+/*** HISTORIA ***/
+.historia {
+    position: relative;
+    overflow: hidden;
+}
+
+.historia .text {
+    font-size: 14px;
+    text-align-last: left;
+    line-height: 30px;
+}
+
+.historia img {
+    position: absolute;
+    left: 0;
+    width: 32vw;
+}
+/*** HISTORIA ***/
+
+/*** MISIÓN/VISIÓN ***/
+.mision .col-sm-6:first-child {
+    padding-right: 100px;
+}
+.mision .col-sm-6:last-child {
+    padding-left: 100px;
+}
+/*** MISIÓN/VISIÓN ***/
+
+/*** VALORES ***/
+.valores {
+    background-color: #C3D500;
+}
+
+.valores p {
+    font-size: 18px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    left: 0;
+    right: 0;
+    /*position: absolute;*/
+}
+/*** VALORES ***/
+
+/*** CONSEJO DIRECTIVO ***/
+.directivo {
+    position: relative;
+    overflow: hidden;
+}
+
+.directivo img {
+    position: absolute;
+    z-index: -1;
+    right: 50%;
+    width: 50vw;
+    top: 0;
+}
+
+.directivo table {
+    margin: 0 auto;
+}
+
+.directivo table, .operativo table, .operativo p {
+    font-size: 16px;
+}
+
+.directivo td, .operativo td {
+    vertical-align: top;
+    padding: 0 5px;
+}
+
+.directivo span,
+.operativo span {
+    font-weight: 700;
+    color: #C3D500;
+}
+
+.directivo td:last-child {
+    padding-left: 50px;
+}
+
+.operativo {
+    padding-bottom: 50px;
+}
+
+.operativo td {
+    width: 50%;
+}
+
+/*** CONSEJO DIRECTIVO ***/
+/*** QUIENES SOMOS ***/
+
+/*** TRANSPARENCIA ***/
+.transparencia .banner {
+    background: url(img/banner/transparencia.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.transparencia .green-btn {
+    height: 60px;
+    width: 236px;
+    line-height: 60px;
+    color: #fff!important;
+    font-size: 20px;
+    text-decoration: none!important;
+}
+
+.parallax-container.informes .container {
+    height: 486px;
+}
+
+.informes img {
+    margin: 30px 0;
+}
+
+.boletin {
+    position: relative;
+}
+
+.boletin .container {
+    height: 486px;
+    position: relative;
+}
+
+.boletin img {
+    position: absolute;
+    min-width: 50vw;
+    width: 600px;
+    bottom: 0;
+}
+
+.boletin .vertical-align {
+    position: absolute;
+    width: calc(100% - 30px);
+}
+
+.boletin a {
+    height: 85px;
+    width: 270px;
+    line-height: 85px;
+    color: #939598!important;
+    text-decoration: none!important;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+/*** TRANSPARENCIA ***/
+
+/*** GALERIA ***/
+.galeria .banner {
+    background: url(img/banner/galeria.jpg) no-repeat center center;
+    background-size: cover;
+}
+/*** GALERIA ***/
+
+/*** SÚMATE ***/
+.sumate .banner {
+    background: url(img/banner/sumate.jpg) no-repeat center center;
+    background-size: cover;
+    text-shadow: 1px 1px rgba(0,0,0,.8), -1px 1px rgba(0,0,0,.8);
+}
+
+.voluntariado h1, .voluntariado h3,
+.donantes h1, .donantes h3{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.voluntariado h3, .donantes h3 {
+    margin: 0;
+    color: #9ecb3b;
+    font-weight: 700;
+    font-size: 36px;
+    font-family: 'Myriad Pro';
+}
+
+.voluntariado h3:first-line {
+    font-size: 25px;
+    color: #939598;
+}
+
+.voluntariado h1, .donantes h1 {
+    font-family: 'Myriad Pro';
+    font-size: 61px;
+    color: #939598;
+}
+
+.donantes {
+    background-color: #939598;
+}
+
+.donacion.banner {
+    background: url(img/banner/contacto2.jpg)no-repeat center center;
+    background-size: cover;
+    text-shadow: none;
+}
+
+.donacion p {
+    margin-bottom: 30px;
+}
+
+.donacion .formato {
+    margin: 15px 0;
+}
+
+.donacion .mail-to:hover {
+    text-decoration: underline!important;
+    color: #707275;
+}
+
+.donacion a, .donacion input[type="submit"] {
+    height: 45px;
+    width: 102px;
+    line-height: 45px;
+    font-size: 14px;
+    text-decoration: none!important;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border: 0;
+}
+
+.donacion th, .donacion td {
+    border: 1px solid #808285;
+    padding: 5px;
+    color: #808285;
+    margin-bottom: 0;
+}
+
+.donacion table {
+    width: 100%;
+}
+
+.donacion th:first-child {
+    border-right: 0;
+}
+
+.donacion th:last-child {
+    border-left: 0;
+}
+
+.donacion td {
+    width: 50%;
+}
+/*** SÚMATE ***/
+
+/*** SEWA ***/
+.sewa .banner {
+    background: url(img/banner/sewa.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.conocenos {
+    position: relative;
+    overflow: hidden;
+}
+
+.conocenos img {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    max-width: 35vw;
+    max-height: 100%;
+}
+
+.centros .element-container {
+    position: relative;
+    background-color: #6ebf49;
+}
+
+.centros .col-sm-4 {
+    padding: 10px;
+}
+
+.centros h3 {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.centros .text-container {
+    padding: 15px;
+    /*position: absolute;
+    z-index: 1;
+    top: 40%;
+    width: 100%;
+    padding: 15px;*/
+}
+
+.eventos .row {
+    margin-bottom: 10px;
+}
+
+.eventos .col-sm-4 {
+    border: 1px solid #808285;
+}
+
+.eventos h3 {
+    color: #6ebf49;
+    font-weight: 700;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-bottom: 5px;
+    padding-left: 23px;
+}
+
+.eventos h3:first-line {
+    padding-left: 30px;
+}
+
+.eventos h3:before {
+    content: url(img/programas/sewa/eventos/notepad.png);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.eventos p.gray {
+    font-size: 18px;
+    font-weight: 700;
+    color: #808285;
+    padding-left: 23px;
+}
+/*** SEWA ***/
+
+/*** RIBERAS ***/
+.riberas .banner {
+    background: url(img/banner/ribera.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.riberas .banner img {
+    max-width: 45%;
+    margin-left: -40%;
+    margin-top: -15%;
+}
+
+.riberas .quienes {
+    position: relative;
+    overflow: hidden;
+}
+
+.riberas .quienes img {
+    position: absolute;
+    left: 0;
+    max-width: 45vw;
+}
+
+.riberas .valores {
+    background: #fff;
+}
+
+.riberas .col-7, .riberas .col-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    float: left;
+}
+
+.riberas .col-7 {
+    width: calc(100% / 7);
+}
+
+.riberas .valores p {
+    font-size: 14px;
+    position: relative;
+}
+
+.riberas .colegio p {
+    margin-left: 18%;
+    margin-right: 10%;
+    font-weight: 700;
+    line-height: 1;
+}
+/*** RIBERAS ***/
+
+/*** FOOTER ***/
+footer {
+    background-color: #fff;
+}
+
+.footer-top .col-sm-6 {
+    z-index: 1;
+}
+
+.footer-top .row {
+    position: relative;
+    height: 250px;	
+}
+
+.footer-top .green-bg {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    background-color: #C3D500;
+    z-index: ;
+}
+
+.footer-top .mail {
+    word-break: break-all;
+}
+
+.footer-top .col-sm-6:first-child img {
+    max-height: 120px;
+    max-width: 90%;
+    float: right;
+    padding-right: 50px;
+}
+
+.footer-top .col-sm-6:nth-child(2) img {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.footer-top .col-sm-4 {
+    padding: 0px!important;
+}
+
+.footer-rights {
+    background-color: #C3D500;
+    padding: 10px;
+    font-family: 'Myriad Pro';
+    font-size: 12px;
+}
+
+.footer-rights p {
+    margin: 0;
+}
+
+.footer-rights a {
+    color: #e3e3e3;
+}
+
+.footer-rights a:hover {
+    color: #a3a3a3;
+    text-decoration: none;
+}
+/*** FOOTER ***/
+
+/*** PARALLAX ***/
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    min-height: 486px;
+    height: auto;
+}
+
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+}
+
+.parallax img {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    min-width: 1920px;
+    width: 100%;
+    background-position: center;
+}
+
+.parallax img.fixed-right {
+    right: 0;
+}
+
+/*** MEDIA QUERIES ***/
+@media (max-width: 1200px) {
+    .text, .donacion .mail-to {
+        line-height: 30px;
+    }
+    .header {
+        font-size: 42px;
+    }
+    h3.header {
+        font-size: 38px;
+    }
+    .first-big:first-line, .gray-green-header:first-line {
+        font-size: 42px;
+    }
+    .green-black {
+        font-size: 36px;
+    }
+    .green-black:first-line {
+        font-size: 43px;
+    }
+    .first-big {
+        font-size: 30px;
+    }
+    .gray-green-header {
+        font-size: 28px;
+    }
+    .valores p {
+        font-size: 14px;
+    }
+    .mision .col-sm-6:first-child {
+        padding-right: 60px;
+    }
+    .mision .col-sm-6:last-child {
+        padding-left: 60px;
+    }
+    .voluntariado h3, .donantes h3 {
+        font-size: 26px;
+    }
+    .voluntariado h3:first-line {
+        font-size: 20px;
+    }
+    .voluntariado h1, .donantes h1 {
+        font-size: 45px;
+    }
+    .riberas .valores p {
+        font-size: 12px;
+    }
+    .riberas .col-4 {
+        width: calc(100% / 4);
+    }
+    .riberas .col-5 {
+        width: calc(100% / 5);
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    h3.header {
+        font-size: 30px;
+    }
+    .green-black {
+        font-size: 26px;
+    }
+    .green-black:first-line {
+        font-size: 33px;
+    }
+    .first-big:first-line {
+        font-size: 32px;
+    }
+    .first-big {
+        font-size: 24px;
+    }
+    .text, .donacion .mail-to {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .nav-contact div {
+        top: 0;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        text-align: right;
+    }
+    .navbar .container {
+        width: auto;
+    }
+    .banner-header {
+        font-size: 50px;
+    }
+    .donaciones a {
+        font-size: 22px;
+        width: 220px;
+        height: 70px;
+        line-height: 70px;
+    }
+    .mision .col-sm-6:first-child {
+        padding-right: 30px;
+    }
+    .mision .col-sm-6:last-child {
+        padding-left: 30px;
+    }
+    .directivo td:last-child {
+        padding-left: 25px;
+    }
+    .directivo img {
+        width: auto;
+        height: 100%;
+    }
+    .boletin a {
+        height: 65px;
+        width: 200px;
+        line-height: 65px;
+        font-size: 25px;
+    }
+    .footer-top .col-sm-6:nth-child(2) img {
+        padding-top: 30px;
+    }
+    .voluntariado h3:first-line {
+        font-size: 18px;
+    }
+    .voluntariado h1, .donantes h1 {
+        font-size: 43px;
+    }
+    .riberas .valores p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner {
+        height: calc(100vh - 157px);
+    }
+    .spacing,
+    .alt-spacing {
+        padding: 50px 15px;
+    }
+    .no-vertical-align-xs {
+        transform: none;
+        top: auto;
+    }
+    .table-row-margin-bottom {
+        margin-bottom: 0;
+    }
+    .header {
+        font-size: 22px;
+    }
+    .first-big:first-line {
+        font-size: 32px;
+    }
+    h3.header {
+        font-size: 20px;
+    }
+    .table-row [class^="col-"] {
+        display: block;
+    }
+    .navbar {
+        background: transparent;
+    }
+    .navbar .container-fluid.brand {
+        padding: 15px;
+    }
+    .navbar .container-fluid.navigation .navbar-header {
+        background-color: #C3D500;
+    }
+    .navbar-brand {
+        padding: 0;
+        float: none;
+    }
+    .navbar-brand img {
+        display: block;
+        margin: 0 auto;
+    }
+    .navbar .social {
+        float: none!important;
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        text-align: center;
+    }
+    .navbar .social .vertical-align {
+        transform: none;
+    }
+    .navbar-toggle:focus, .navbar-toggle:hover {
+        background-color: #abbb00!important;
+    }
+    #navbar .navbar-header {
+        margin: 0;
+    }
+    .navbar .navbar-collapse {
+        width: 100%;
+        padding: 0!important;
+        margin: 0;
+        border: 0;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        background: transparent;
+    }
+    .navbar .navbar-collapse.in {
+        height: auto!important;
+    }
+    .navbar-nav {
+        padding: 0!important;
+        margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 200px;
+        float: right;
+        text-align: right;
+        background-color: #C3D500;
+        height: auto;
+    }
+    .navbar-nav:after {
+        display: none;
+    }
+    .navbar-nav>li {
+        display: block;
+        height: auto;
+        width: auto;
+    }
+    .navbar-green .navbar-nav>li:hover {
+        background-color: #abbb00;
+    }
+    .navbar-green .navbar-nav>li:last-child:hover {
+        background-color: #eeeeee!important;
+    }
+    .navbar-nav>li>a {
+        position: relative;
+        transform: none;
+        padding: 10px!important;
+    }
+    .navbar-fixed-top .navbar-collapse {
+        max-height: none;
+    }
+    .navbar .dropdown li {
+        text-align: right;
+    }
+    .navbar-black .container-fluid.navigation .navbar-header,
+    .navbar-black .navbar-nav {
+        background-color: #231f20;
+    }
+    .navbar-black .navbar-nav>li:hover {
+        background-color: #2e2a2b;
+    }
+    .navbar-black .navbar-nav>li:last-child:hover {
+        background-color: #61a840!important;
+    }
+    .navbar-yellow .container-fluid.navigation .navbar-header,
+    .navbar-yellow .navbar-nav {
+        background-color: #fdd700;
+    }
+    .navbar-yellow .navbar-nav>li:hover {
+        background-color: #f0cc00;
+    }
+    .navbar-yellow .navbar-nav>li:last-child:hover {
+        background-color: #eeeeee!important;
+    }
+    .navbar-green .dropdown li {
+        background-color: #C3D500;
+    }
+    .navbar-black .dropdown li {
+        background-color: #231f20;
+    }
+    .navbar-yellow .dropdown li {
+        background-color: #fdd700;
+    }
+    .navbar-black .navbar-toggle:hover,
+    .navbar-black .navbar-toggle:focus {
+        background-color: #2e2a2b!important;
+    }
+    .navbar-yellow .navbar-toggle:hover,
+    .navbar-yellow .navbar-toggle:focus {
+        background-color: #f0cc00!important;
+    }
+    .banner-header {
+        font-size: 43px;
+    }
+    .programas .container img {
+        max-height: 150px;
+    }
+    .alianzas .col-sm-3 {
+        height: 120px;
+    }
+    .contacto p {
+        margin-bottom: 20px;
+    }
+    .noticias .news-container {
+        padding: 0;
+    }
+    .noticias .news-container:before {
+        display: none;
+    }
+    .noticias .img-container {
+        height: 250px;
+        background-color: #C3D500;
+        overflow: hidden;
+    }
+    .noticias .img-container img {
+        position: relative;
+        z-index: 1;
+        min-width: 100%;
+        height: auto;
+    }
+    .valores p {
+        position: relative;
+        font-size: 16px;
+    }
+    .boletin {
+        overflow: hidden;
+    }
+    .footer-top .green-bg {
+        display: none;
+    }
+    .footer-top .row {
+        height: auto!important;
+    }
+    .footer-top .col-sm-6, .footer-top .col-sm-4  {
+        transform: none;
+        top: 0;
+    }
+    .footer-top .col-sm-6 {
+        padding: 15px;
+    }
+    .footer-top .col-sm-6:nth-child(2) {
+        background-color: #C3D500;
+    }
+    .footer-top img {
+        float: none!important;
+        padding: 0!important;
+    }
+    .mision .col-sm-6:first-child {
+        padding: 0;
+    }
+    .mision .col-sm-6:last-child {
+        padding: 0;
+    }
+    .voluntariado h3, .donantes h3 {
+        font-size: 20px;
+        text-align: center;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .voluntariado h3:first-line {
+        font-size: 18px;
+    }
+    .voluntariado h1, .donantes h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .centros .element-container {
+        max-width: 374px;
+        margin: 0 auto;
+    }
+    .eventos h3 {
+        font-size: 18px;
+    }
+    .eventos p.gray {
+        font-size: 15px;
+    }
+    .riberas .valores div[class^='col-'] {
+        width: 100%;
+        margin: 0 auto;
+        min-height: 0;
+        float: none;
+    }
+    .noticias .vertical-align {
+        top: 0;
+        transform: none;
+    }
+    .riberas .colegio p {
+        margin-left: 24%;
+        margin-right: 12%;
+    }
+    .quienes .presentacion a {
+        font-size: 22px;
+        height: 80px;
+        line-height: 80px;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-header {
+        font-size: 28px;
+    }
+    .green-black {
+        font-size: 18px;
+    }
+    .green-black:first-line {
+        font-size: 22px;
+    }
+    .directivo td:last-child {
+        padding-left: 5px;
+    }
+    .voluntariado h3, .donantes h3 {
+        font-size: 18px;
+    }
+    .voluntariado h3:first-line {
+        font-size: 16px;
+    }
+    .voluntariado h1, .donantes h1 {
+        font-size: 24px;
+    }
+    .riberas .colegio p {
+        margin-left: 24%;
+        margin-right: 5%;
+    }
+    .noticias .carousel-inner {
+        max-width: 100%;
+    }
+    .noticias .carousel-control {
+        opacity: 0;
+    }
+    .quienes .presentacion a {
+        height: 70px;
+        line-height: 70px;
+        font-size: 16px;
+    }
+}

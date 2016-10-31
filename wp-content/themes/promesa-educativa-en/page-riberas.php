@@ -7,6 +7,7 @@
 
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <div class="banner">
+        <img class="banner-img" src="<?php echo CFS()->get('banner'); ?>" alt="Banner">
         <div class="container text-center vertical-align">
             <img src="<?php bloginfo('template_url')?>/img/programas/riberas-caption.png" alt="SEWA">
         </div>
@@ -44,7 +45,7 @@
         <div class="modal fade" id="video-modal" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/ZisDhiKYDfE" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jW7jedAyGuA" frameborder="0" allowfullscreen></iframe>
                     <button type="button" data-dismiss="modal" aria-label="Close">Back</button>				
                 </div>
             </div>

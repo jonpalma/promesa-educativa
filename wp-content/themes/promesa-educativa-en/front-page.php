@@ -30,7 +30,7 @@ player.playVideo();
 player.mute();
 }
 </script>-->
-        <video autoplay loop muted>
+        <video autoplay loop>
             <source src="<?php echo bloginfo('template_url'); ?>/video/banner.mp4" type="video/mp4">
         </video>
         <div class="container text-center vertical-align">
@@ -43,7 +43,7 @@ player.mute();
 
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <div class="nosotros spacing" id="nosotros">
-        <img class="hidden-xs vertical-align" src="<?php bloginfo('template_url')?>/img/nosotros/child2.png">
+        <img class="hidden-xs vertical-align" src="<?php bloginfo('template_url')?>/img/nosotros/child2.png" alt="Decoration">
         <div class="container">
             <div class="col-sm-6"></div>
             <div class="col-sm-6 no-padding">
@@ -93,18 +93,26 @@ player.mute();
                 </div>
             </div>
             <div class="container light-spacing">
-                <div class="row no-margin">
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/conservatorio.png" alt="Conservatorio de Música"></div>
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/cecytech.png" alt="CECYTECH"></div>
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/facultad.png" alt="Facultad de Artes"></div>
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/kipp.png" alt="KIPP"></div>
+                <?php
+                $arrayEducativas = CFS()->get('educativas_array');
+                $arrayLength = count($arrayEducativas);
+                $arrayEnd = end($arrayEducativas);
+                $counter = 0;
+                foreach( $arrayEducativas as $alianza ) {
+                    if($counter == 0 || $counter%4 == 0) {
+                        echo '<div class="row no-margin">';
+                    }
+                ?>
+                <div class="col-sm-3 col-xs-6">
+                    <img class="img-responsive center-block" src="<?php echo $alianza['img'];?>" alt="Integridad">
                 </div>
-                <div class="row no-margin">
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/tec.png" alt="Tec de Monterrey"></div>
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/networks.png" alt="Networks of Schools"></div>
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/la-salle.png" alt="Universidad La Salle"></div>
-                    <div class="col-sm-3 col-xs-6"><p class="text vertical-align">SECyD</p></div>
-                </div>
+                <?php
+                    $counter++;
+                    if($counter%4 == 0 || $alianza == $arrayEnd) {
+                        echo '</div>';
+                    }
+                }
+                ?>
             </div>
         </div>
         <div class="ong">
@@ -114,21 +122,26 @@ player.mute();
                 </div>
             </div>
             <div class="container light-spacing">
-                <div class="row no-margin">
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/casa-hogar.png" alt="Casa Hogar de Niñas"></div>
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/fechac.png" alt="FECHAC"></div>
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/immujer.png" alt="IMMUJER"></div>
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/comunidad.png" alt="Comunidad y Familia"></div>
+                <?php
+                $arrayOng = CFS()->get('ong_array');
+                $arrayLength = count($arrayOng);
+                $arrayEnd = end($arrayOng);
+                $counter = 0;
+                foreach( $arrayOng as $alianza ) {
+                    if($counter == 0 || $counter%4 == 0) {
+                        echo '<div class="row no-margin">';
+                    }
+                ?>
+                <div class="col-sm-3 col-xs-6">
+                    <img class="img-responsive center-block" src="<?php echo $alianza['img'];?>" alt="Integridad">
                 </div>
-                <div class="row no-margin">
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/vicentinas.png" alt="Vicentinas"></div>
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/world-book.png" alt="World is a Book"></div>
-                    <div class="col-sm-3 col-xs-6"><p class="text vertical-align">Centro comunitario para Educar a la Familia, A.C.</p></div>
-                    <div class="col-sm-3 col-xs-6"><p class="text vertical-align">Siembra y Cosecha, A.C.</p></div>
-                </div>
-                <div class="row no-margin">
-                    <div class="col-sm-3 col-xs-6"><p class="text vertical-align">Promotora para el Desarrollo del Niño, A.C.</p></div>
-                </div>
+                <?php
+                    $counter++;
+                    if($counter%4 == 0 || $alianza == $arrayEnd) {
+                        echo '</div>';
+                    }
+                }
+                ?>
             </div>
         </div>
         <div class="gubernamentales">
@@ -138,22 +151,26 @@ player.mute();
                 </div>
             </div>
             <div class="container light-spacing">
-                <div class="row no-margin">
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/ayuntamiento.png" alt="Ayuntamiento Chihuahua"></div>
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/cultura.png" alt="Secretaría de Cultura"></div>
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/dif.png" alt="dif"></div>
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/musica-armonia.png" alt="Música Armonía"></div>
+                <?php
+                $arrayGubern = CFS()->get('gubernamentales_array');
+                $arrayLength = count($arrayGubern);
+                $arrayEnd = end($arrayGubern);
+                $counter = 0;
+                foreach( $arrayGubern as $alianza ) {
+                    if($counter == 0 || $counter%4 == 0) {
+                        echo '<div class="row no-margin">';
+                    }
+                ?>
+                <div class="col-sm-3 col-xs-6">
+                    <img class="img-responsive center-block" src="<?php echo $alianza['img'];?>" alt="Integridad">
                 </div>
-                <div class="row no-margin">
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/instituto-cultura.png" alt="Instituto de la Cultura"></div>
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/fech.png" alt="FECH"></div>
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/gobierno.png" alt="Gobierno del Estado"></div>
-                    <div class="col-sm-3 col-xs-6"><p class="text vertical-align">Cento Comunitario Riberas</p></div>
-                </div>
-                <div class="row no-margin">
-                    <div class="col-sm-3 col-xs-6"><p class="text vertical-align">Atención Ciudadana</p></div>
-                    <div class="col-sm-3 col-xs-6"><p class="text vertical-align">Secretaria de Educación, Cultura y Deporte</p></div>
-                </div>
+                <?php
+                    $counter++;
+                    if($counter%4 == 0 || $alianza == $arrayEnd) {
+                        echo '</div>';
+                    }
+                }
+                ?>
             </div>
         </div>
         <div class="otras">
@@ -163,12 +180,26 @@ player.mute();
                 </div>
             </div>
             <div class="container light-spacing no-spacing-bottom">
-                <div class="row no-margin">
-                    <div class="col-sm-3 col-xs-6"><img class="vertical-align center-block img-responsive" src="<?php bloginfo('template_url')?>/img/alianzas/santa-rosa.png" alt="Conservatorio de Música"></div>
-                    <div class="col-sm-3 col-xs-6"><p class="text vertical-align">Parroquia de nuestra Señora de Fátima</p></div>
-                    <div class="col-sm-3 col-xs-6"><p class="text vertical-align">Parroquia de San José de Ávalos</p></div>
-                    <div class="col-sm-3 col-xs-6"><p class="text vertical-align">Parroquia de San Antonio de Padua</p></div>
+                <?php
+                $arrayOtras = CFS()->get('otras_array');
+                $arrayLength = count($arrayOtras);
+                $arrayEnd = end($arrayOtras);
+                $counter = 0;
+                foreach( $arrayOtras as $alianza ) {
+                    if($counter == 0 || $counter%4 == 0) {
+                        echo '<div class="row no-margin">';
+                    }
+                ?>
+                <div class="col-sm-3 col-xs-6">
+                    <img class="img-responsive center-block" src="<?php echo $alianza['img'];?>" alt="Integridad">
                 </div>
+                <?php
+                    $counter++;
+                    if($counter%4 == 0 || $alianza == $arrayEnd) {
+                        echo '</div>';
+                    }
+                }
+                ?>
             </div>
         </div>
     </div>
@@ -241,7 +272,7 @@ player.mute();
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <div class="donaciones">
         <div class="parallax-container">
-            <div class="parallax"><img src="<?php bloginfo('template_url')?>/img/parallax/bg2.jpg"></div>
+            <div class="parallax"><img src="<?php bloginfo('template_url')?>/img/parallax/bg2.jpg" alt="Parallax Bg"></div>
             <div class="container text-center">
                 <div class="vertical-align">
                     <h1 class="white header"><?php echo CFS()->get('donaciones_title');?></h1>
@@ -260,7 +291,7 @@ player.mute();
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <div class="video text-center">
         <div class="parallax-container">
-            <div class="parallax"><img src="<?php bloginfo('template_url')?>/img/banner/bg.jpg"></div>
+            <div class="parallax"><img src="<?php bloginfo('template_url')?>/img/banner/bg.jpg" alt="Parallax Bg"></div>
             <div class="vertical-align caption">
                 <h1 class="white header">Watch Institutional Video</h1>
                 <a href="#video-modal" data-toggle="modal" data-target="#video-modal"><img class="img-responsive center-block" src="<?php bloginfo('template_url')?>/img/video/play.png" alt=""></a>
@@ -269,7 +300,7 @@ player.mute();
         <div class="modal fade" id="video-modal" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/bi738igrDW0" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/bi738igrDW0" allowfullscreen></iframe>
                     <button type="button" data-dismiss="modal" aria-label="Close">Back</button>				
                 </div>
             </div>

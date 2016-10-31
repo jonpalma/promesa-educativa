@@ -18,14 +18,14 @@
 					<div class="col-sm-4">
 							<img class="center-block" src="<?php echo get_bloginfo('template_url');?>/img/icons/phone-white.png" alt="Teléfono">
 						<p>
-							<span class="bold">Telephone:</span><br>
+							<span class="bold">Phone number:</span><br>
 							+52 (614) 413.0624
 						</p>
 					</div>
 					<div class="col-sm-4">
 							<img class="center-block" src="<?php echo get_bloginfo('template_url');?>/img/icons/mail-white.png" alt="Correo">
 						<p>
-							<span class="bold">Email:</span><br>
+							<span class="bold">E-mail:</span><br>
 							<span class="mail">contacto@promesaeducativa.org</span>
 						</p>
 					</div>

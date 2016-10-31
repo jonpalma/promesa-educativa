@@ -48,14 +48,6 @@ a:focus {
 	padding-bottom: 30px;
 }
 
-.no-spacing-top {
-    padding-top: 0;
-}
-
-.margin-bottom {
-    margin-bottom: 20px;
-}
-
 .header {
 	font-weight: 700;
 	font-size: 50px;
@@ -170,7 +162,7 @@ h4.green2 {
 }
 
 .green-btn:hover {
-	background-color: #abbb00;
+	background-color: #8cb334;
 }
 
 .white-btn {
@@ -274,7 +266,7 @@ h4.green2 {
 }
 
 .navbar-nav>li:hover {
-	/*background-color: #abbb00;*/
+	/*background-color: #8cb334;*/
 }
 
 .navbar-nav>li>a {
@@ -324,7 +316,7 @@ h4.green2 {
 }
 
 .navbar .dropdown.open {
-	background-color: #abbb00;
+	background-color: #8cb334;
 }
 
 .navbar .dropdown>a {
@@ -345,7 +337,7 @@ h4.green2 {
 }
 
 .navbar .dropdown-menu a:hover {
-	background-color: #abbb00!important;
+	background-color: #8cb334!important;
 }
 
 .navbar-black .dropdown.open {
@@ -438,11 +430,8 @@ h4.green2 {
 /*** PROGRAMAS ***/
 
 /*** NOTICIAS ***/
-.noticias .carousel-inner {
-    max-width: 80%;
-}
-
 .noticias .carousel-caption {
+	max-width: 80%;
 	margin: 0 auto;
 	position: relative;
 	right: 0;
@@ -1223,7 +1212,7 @@ footer {
 		transform: none;
 	}
 	.navbar-toggle:focus, .navbar-toggle:hover {
-		background-color: #abbb00!important;
+		background-color: #8cb334!important;
 	}
 	#navbar .navbar-header {
 		margin: 0;
@@ -1261,7 +1250,7 @@ footer {
 		width: auto;
 	}
 	.navbar-green .navbar-nav>li:hover {
-		background-color: #abbb00;
+		background-color: #8cb334;
 	}
 	.navbar-green .navbar-nav>li:last-child:hover {
 		background-color: #eeeeee!important;

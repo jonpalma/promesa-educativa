@@ -166,7 +166,7 @@
 
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <div class="container spacing text-center">
-        <h1 class="header green2">COLABORATORS</h1>
+        <h1 class="header green2">CONTRIBUTORS</h1>
         <p class="text">
             <?php 
             $arrayColaboradores = CFS()->get('colaboradores_array');

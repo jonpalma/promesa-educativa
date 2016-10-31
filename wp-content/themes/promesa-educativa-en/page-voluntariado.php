@@ -6,6 +6,7 @@
 
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <div class="banner">
+        <img class="banner-img" src="<?php echo CFS()->get('banner'); ?>" alt="Banner">
         <div class="container text-center vertical-align">
             <h1 class="banner-header"><?php echo CFS()->get('banner_caption');?></h1>
         </div>
@@ -20,7 +21,7 @@
             <div class="row no-margin">
                 <div class="col-sm-6">
                     <h3 class="gray-green"><?php echo CFS()->get('practicas_small_title');?></h3>
-                    <h1><?php echo CFS()->get('practica_main_title');?></h1>
+                    <h1><?php echo CFS()->get('practicas_main_title');?></h1>
                     <p class="text">
                         <?php echo CFS()->get('practicas_text');?>
                     </p>

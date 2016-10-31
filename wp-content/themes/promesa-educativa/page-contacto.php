@@ -6,6 +6,7 @@
 
 	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 	<div class="banner">
+        <img class="banner-img" src="<?php echo CFS()->get('banner'); ?>" alt="Banner">
 		<div class="container text-center vertical-align">
 		</div>
 	</div>
